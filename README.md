@@ -6,8 +6,9 @@ NAT端口转发Shell 脚本
 ```
 wget https://cdn.jsdelivr.net/gh/muzihuaner/NATScript@main/nat-manager.sh && chmod +x nat-manager.sh
 ```
-## 交互式菜单
+## 使用命令
 ```
+# 交互式菜单
 ./nat-manager.sh menu
 
 # 添加规则
