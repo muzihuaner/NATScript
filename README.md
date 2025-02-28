@@ -4,7 +4,7 @@ NAT端口转发Shell 脚本
 ## 使用方法
 获取脚本并赋予执行权限：
 ```
-https://cdn.jsdelivr.net/gh/muzihuaner/NATScript@main/nat-manager.sh && chmod +x nat-manager.sh
+wget https://cdn.jsdelivr.net/gh/muzihuaner/NATScript@main/nat-manager.sh && chmod +x nat-manager.sh
 ```
 ## 交互式菜单
 ```
