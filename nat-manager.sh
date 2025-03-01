@@ -87,12 +87,17 @@ save_rules() {
 show_menu() {
   while true; do
     echo ""
-    echo "===== DNAT 端口转发管理菜单 ====="
+    echo "===== NAT 端口转发管理菜单 ====="
     echo "1. 添加端口转发规则"
     echo "2. 删除端口转发规则"
     echo "3. 列出所有规则"
     echo "4. 保存规则到持久化存储"
     echo "5. 退出"
+    echo "------------------------"
+    echo "NAT 端口转发脚本"
+    echo "作者: muzihuaner"
+    echo "项目地址：https://github.com/muzihuaner/NATScript"
+    echo "------------------------"
     read -p "请输入选项 [1-5]: " CHOICE
 
     case $CHOICE in
