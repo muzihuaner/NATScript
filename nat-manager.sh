@@ -44,7 +44,6 @@ add_rule() {
   echo "规则已添加：公网端口 $EXT_PORT => $DEST_IP:$DEST_PORT"
 }
 
-# 删除规则
 del_rule() {
   list_rules
   read -p "请输入要删除的规则编号: " RULE_NUM
@@ -57,8 +56,8 @@ del_rule() {
   fi
 
   # 解析规则参数
-  EXT_PORT=$(echo $RULE | awk '{print $3}')
-  DEST_IP_PORT=$(echo $RULE | awk '{print $6}')
+  EXT_PORT=$(echo "$RULE" | grep -oP 'dpt:\K\d+')
+  DEST_IP_PORT=$(echo "$RULE" | grep -oP 'to:\K\S+')
   DEST_IP=${DEST_IP_PORT%:*}
   DEST_PORT=${DEST_IP_PORT#*:}
 
